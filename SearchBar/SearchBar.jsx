@@ -3,9 +3,7 @@ import React from "react";
 
 function template() {
   return (
-    <div className="search-bar">
-      <h1>SearchBar</h1>
-    </div>
+    <input placeholder="Book Name" className=""/>
   );
 };
 
