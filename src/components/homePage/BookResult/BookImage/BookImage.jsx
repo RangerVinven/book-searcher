@@ -1,12 +1,12 @@
 import "./BookImage.css";
 import React from "react";
 
-function template() {
+function BookImage() {
   return (
-    <div className="book-image">
-      <h1>BookImage</h1>
+    <div className="">
+      <img className="h-auto w-56" src={this.props.thumbnailSrc} />
     </div>
   );
 };
 
-export default template;
+export default BookImage;

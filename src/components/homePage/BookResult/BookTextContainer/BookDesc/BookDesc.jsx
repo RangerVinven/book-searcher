@@ -1,12 +1,12 @@
 import "./BookDesc.css";
 import React from "react";
 
-function template() {
+function BookDesc() {
   return (
     <div className="book-desc">
-      <h1>BookDesc</h1>
+      <h1>{this.props.desc}</h1>
     </div>
   );
 };
 
-export default template;
+export default BookDesc;

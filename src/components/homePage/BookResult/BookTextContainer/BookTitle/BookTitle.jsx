@@ -3,8 +3,8 @@ import React from "react";
 
 function template() {
   return (
-    <div className="book-title">
-      <h1>BookTitle</h1>
+    <div className="text-xl font-semibold">
+      <h1 className="text-md">{this.props.bookTitle}</h1>
     </div>
   );
 };

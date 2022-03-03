@@ -1,12 +1,12 @@
 import "./BookAuthor.css";
 import React from "react";
 
-function template() {
+function BookAuthor() {
   return (
     <div className="book-author">
-      <h1>BookAuthor</h1>
+      <h1>By {this.props.author}</h1>
     </div>
   );
 };
 
-export default template;
+export default BookAuthor;
