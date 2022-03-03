@@ -7,8 +7,8 @@ import SearchButton from "./SearchButton";
 function SearchArea() {
   return (
     <div className="flex mt-12">
-      <SearchBar />
-      <SearchButton />
+      <SearchBar updateBookTitle={this.props.updateBookTitle} />
+      <SearchButton buttonOnClick={this.props.buttonOnClick} bookTitleProp={this.props.bookTitle} />
     </div>
   );
 };

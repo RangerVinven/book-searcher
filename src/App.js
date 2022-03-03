@@ -1,17 +1,27 @@
+import { useState } from "react";
 import "./App.css";
 
 import SearchArea from "./components/homePage/SearchArea";
 import BookResults from "./components/homePage/BookResult";
 
-const searchBook = (bookTitle) => {
 
-}
 
 function App() {
+
+  const [bookTitle, setBookTitle] = useState("");
+  
+  const searchBook = () => {
+    console.log(`Calling ${bookTitle}`);
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=AIzaSyDAzw9IvHlX_qf-euw5u_XkYN42THF7r1U`)
+    .then(response => response.json()).then(results => {
+      console.log(results);
+    });
+  }
+
   return (
     <div>
       <div className="flex justify-center mb-8">
-        <SearchArea />
+        <SearchArea buttonOnClick={searchBook} updateBookTitle={setBookTitle} bookTitleProp={bookTitle} />
       </div>
 
       <div className="flex justify-center mt-8 mb-8">
