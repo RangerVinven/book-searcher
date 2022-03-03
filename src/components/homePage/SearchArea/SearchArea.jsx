@@ -1,12 +1,16 @@
 import "./SearchArea.css";
 import React from "react";
 
-function template() {
+import SearchBar from "./SearchBar";
+import SearchButton from "./SearchButton";
+
+function SearchArea() {
   return (
-    <div className="search-area">
-      <h1>SearchArea</h1>
+    <div className="flex mt-12">
+      <SearchBar />
+      <SearchButton />
     </div>
   );
 };
 
-export default template;
+export default SearchArea;

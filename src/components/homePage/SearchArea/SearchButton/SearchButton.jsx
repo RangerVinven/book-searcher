@@ -1,12 +1,12 @@
 import "./SearchButton.css";
 import React from "react";
 
-function template() {
+function SearchButton() {
   return (
-    <div className="search-button">
-      <h1>SearchButton</h1>
+    <div>
+      <button className="text-white ml-5 p-1 bg-purple-500 rounded-md">Search</button>
     </div>
   );
 };
 
-export default template;
+export default SearchButton;
